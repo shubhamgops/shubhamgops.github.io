@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <title>Diwali banner</title>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                    var right= $('.center-right');
+                    
+                    right.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',function(e){
+                        $('.banner').css('display','block');
+                    });
+            });
+        </script>
+        <style>
+            body{
+                margin:0;
+                padding: 0;
+            }
+            .main{
+                width: 100%;
+                height: 100%;
+/*                background: yellow;*/
+            }                               
+            
+            .left {
+                width:33.33%;
+                height: 100%;
+/*                background: red; */
+                float:left;
+            }
+            .center {
+                width:33.33%;
+                height: 100%;
+                background: #ea8864;
+                float:left;
+            }
+            .right {
+                width:33.33%;
+                height: 100%;
+/*                background: blue;*/
+                float: left;
+            }
+            
+            .center-left{
+                width:50%;
+                height: 25%;
+/*                background: violet;*/
+                float: left;
+                margin-top: 525px;
+                position: relative;
+                -webkit-animation: left 12s ease-in-out;
+            }
+            
+            .center-left img{
+                width:40%;
+                height: auto;
+                float: right;
+            }
+            
+            
+            .center-right{
+                width:50%;
+                height: 25%;
+/*                background: skyblue;*/
+                float: left;
+                position: relative;
+                margin-top: 525px;
+                -webkit-animation:right 12s ease-in-out;
+            }
+            
+            
+            
+            .center-right img{
+                width:40%;
+                height: auto;
+                float: left;
+                position: relative;
+            }
+            
+            
+            @-webkit-keyframes left{
+                0%{bottom:0px;}
+                20%{bottom:0px;}
+                40%{bottom:260px;}
+                60%{bottom:260px;}
+                80%{bottom:520px;}
+                90%{bottom:530px}
+                100%{bottom:530px}
+            }
+            
+             @-webkit-keyframes right{
+                 0%{bottom:0px;}
+                 20%{bottom:130px}
+                 40%{bottom:130px}
+                 60%{bottom:390px}
+                 80%{bottom:390px}
+                 90%{bottom:530px}
+                 100%{bottom:530px}
+            }
+            
+            .left-top{
+                width: 100%;
+                height: 33.33%;
+                background: yellow;
+            }
+            .left-center{
+                width: 100%;
+                height: 33.33%;
+                background: yellow;
+            }
+            .left-bottom{
+                width: 100%;
+                height: 33.33%;
+                background: yellow;
+            }
+            .right-top{
+                width: 100%;
+                height: 33.33%;
+                background: yellow;
+            }
+            .right-center{
+                width: 100%;
+                height: 33.33%;
+                background: yellow;
+            }
+            .right-bottom{
+                width: 100%;
+                height: 33.33%;
+                background: yellow;
+            }
+            
+            
+            .banner{
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top:0;
+                width:100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rg(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+            }
+            
+            .banner img{
+                width:100%;
+                height: 100vh;
+            }
+            
+            figure{
+                 margin: 0;
+                padding: 0;
+            }
+            
+            img{
+                width: 100%;
+                height: 100%;
+             
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="left">
+                <div class="left-top">
+                    <figure>
+                        <img src="narak%20chathurdashi.jpg">
+                    </figure>
+                </div>
+                <div class="left-center">
+                    <figure>
+                        <img src="dhantreas.jpg">
+                    </figure>
+                </div>
+                <div class="left-bottom">
+                        <img src="laksmipuja.jpg">
+                </div>
+            </div>
+            <div class="center">
+                <div class="center-left">
+                    <img src="left.png">
+                </div>
+                <div class="center-right">
+                    <img src="right.png">
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-top">
+                     <figure>
+                        <img src="gudhi.jpg">
+                    </figure>
+                </div>
+                <div class="right-center">
+                    <figure>
+                        <img src="bhai%20dooj.jpg">
+                    </figure>
+                </div>
+                <div class="right-bottom">
+                    <figure>
+                        <img src="panti.gif">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="happy_diwali.jpg">
+        </div>
+    </body>
+</html>
