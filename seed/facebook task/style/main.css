@@ -1,0 +1,173 @@
+*{
+    /*border:1px solid red !important; */
+    font-family: sans-serif;
+}
+
+body{
+    margin:0px;
+}
+
+.main{
+    max-width: 100%;
+    height: 100%;
+    min-width: 1258px;
+}
+
+.header{
+    width: 100%;
+    height:82px;
+    background-color: #3b5998;
+}
+
+.content{
+    width: 100%;
+    height: 597px;
+    background-color: #fafafc;
+}
+
+.footer{
+    width: 100%;
+    height: 139px;
+    background-color: #ffffff;
+}
+
+.centerbar{
+    width:80%;
+    margin: auto;
+}
+
+.loginpanel{
+    float:right;
+    margin-top: 10px;
+    color:white;
+}
+
+.inputlbl{
+    font-size:12px;
+     margin: 0 5px;
+
+}
+
+a.inputlbl{
+      text-decoration: none;
+    color:#9cb4d8;
+}
+a.inputlbl:hover{
+    text-decoration: underline;
+}
+
+.logininput{
+    border:none;
+    width: 161px;
+    margin: 0 5px;
+    height: 17px;
+}
+
+.loginbtn{
+    background-color: #4267b2;
+    border-color: #29487d;
+    color:white;
+}
+
+.logo{
+    color: #ffffff;
+    font-family: helvetica, arial, sans-serif;
+    direction: ltr;
+    line-height: 1.34;
+}
+
+.logo h1{
+    position:absolute;
+    font-weight: bold;
+}
+
+.tagline{
+    float:left;
+    color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 40px;
+    width: 450px;
+    word-spacing: -1px;
+}
+
+.imagebanner{
+    top:180px;
+}
+
+.left{
+    float:left;
+    height: 579px;
+}
+
+.right{
+}
+
+.headsignup{
+    color:#333;
+}
+.headsignup h2{
+    font-size:32px;
+}
+
+
+.subheadsignup{
+    color:#333;
+}
+
+.subheadsignup h2{
+    margin-top:0px;
+    font-size:18px;
+    font-weight: 400;
+}
+
+.input{
+    padding:10px;
+    margin:5px;
+    border-color:#bdc7d8;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size:15px;
+
+}
+
+
+.signupform h2{
+    color:#333;
+    font-size:18px;
+    font-weight: 400;
+}
+
+#day,#month,#year{
+    padding:5px;
+}
+
+.gender{
+    color:#333;
+    font-size: 18px;
+}
+
+.agree{
+    color: #777;
+    font-size: 11px;
+    display: block;
+    width: 852px;
+}
+
+#signup{
+    font-size: 19px;
+    line-height: 126%;
+    font-family: 'Freight Sans Bold', helvetica, arial, sans-serif;
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border:none;
+    color:white;
+    padding: 4px 10px 4px 10px;
+
+}
+
+#signup:hover{
+        background: linear-gradient(#79bc64, #578843);
+}
