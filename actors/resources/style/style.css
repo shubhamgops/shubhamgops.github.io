@@ -1,0 +1,244 @@
+/*-----------------------------------*/
+/*---------BASIC SETUP---------------*/
+/*-----------------------------------*/
+html,body,h1,p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*------------------------------------------*/
+/*---------REUSABLE COMPONENT---------------*/
+/*------------------------------------------*/
+
+/*------------------FONTS-------------------*/
+@font-face {
+    font-family:Oswald;
+    src:url('fonts/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family:MrDeHaviland;
+    src:url('fonts/MrDeHaviland-Regular.ttf')
+}
+
+@font-face {
+    font-family:Quattrocento;
+    src:url('fonts/Quattrocento-Regular.ttf')
+}
+
+/*--------------main div--------------*/
+
+.main,.main-2,.main-3,.main-4 {
+    width:100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: Oswald,monospace;
+    color:#27ad93;
+}
+
+
+/*--------------gengeral link---------------*/
+a{
+    color:dodgerblue;
+    text-decoration: none;
+}
+
+a:hover,a:active{
+    color: aqua;
+}
+
+
+/*----------------table---------------------*/
+table{
+    border-collapse: collapse;
+    color:white;
+    
+}
+
+tr{
+    border-bottom: 2px solid #27ad93;
+}
+
+td{
+    padding-right: 50px;
+    padding-top: 4px;
+}
+
+
+
+/*------------------------------------------*/
+/*---------------Home Section---------------*/
+/*------------------------------------------*/
+
+.main {
+    background: linear-gradient(rgba(74, 53, 20, 0.6),rgba(74, 53, 20, 0.6)),url(images/Amitabh-Bachchan-With-Goggles-HD-Images.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.menu{
+    right:300px;
+    position: fixed;
+    z-index: 9999;
+}
+
+.menu ul {
+    list-style: none;
+    float: right;
+}
+
+.menu ul li{
+    float: left;
+    padding:5px 20px;
+    margin: 5px 30px;
+    background: #27ad93;
+    color: white;
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color:white;
+}
+
+.main p{
+    font-family: Quattrocento;
+    font-size: 25px;
+    position: absolute;
+    top:580px;
+    left:50px;
+}
+
+p.name {
+    font-family:  MrDeHaviland;
+    font-size: 100px;
+    line-height: 82px;
+    letter-spacing: 0;
+    position: absolute;
+    top:500px;
+    left: 50px
+}
+
+.sign{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    height: 150px;
+}
+
+
+
+
+/*------------------------------------------*/
+/*---------------About Section--------------*/
+/*------------------------------------------*/
+.main-2 {
+      background: linear-gradient(rgba(74, 53, 20, 0.6),rgba(74, 53, 20, 0.6)),url(images/Actor-amitabh-bachchan-desktop-background.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+.main-2 table {
+    float: right;
+    position: relative;
+    top:150px;
+    right: 50px;
+}
+
+
+/*------------------------------------------*/
+/*---------------Early and personal life Section--------------*/
+/*------------------------------------------*/
+
+.main-3 {
+    background: linear-gradient(rgba(74, 53, 20, 0.6),rgba(74, 53, 20, 0.6)),url(images/Amitabh-Bachchan-HD-Images.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+    
+}
+
+.main-3 h3{
+    margin: 0;
+    padding-top: 40px;
+    font-size: 40px;
+    line-height: 80px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.main-3 .container{
+    width:90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    top:50px;
+    font-family: Quattrocento,sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0;
+     color: #fcfafa;
+}
+
+.main-3 .first{
+    flex: 1;
+}
+
+.main-3 .second{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.second p{
+    flex: 1;
+}
+
+/*------------------------------------------*/
+/*---------------Filmography Section--------------*/
+/*------------------------------------------*/
+.main-4 {
+      background: linear-gradient(rgba(74, 53, 20, 0.6),rgba(74, 53, 20, 0.6)),url(images/amitabh-bachchan-wallpaper-hd.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-4 .container{
+    width:80%;
+    margin:0 auto;
+}
+
+.main-4 table{
+    position: relative;
+    top:200px;
+    width:100%;
+}
+
+.main-4 table th{
+    background: rgb(39, 173, 147);
+}
+
+.main-4 table td{
+    text-align: center;
+}
+
+
+.main-4 table tr:hover,.main-4 table tr:active{
+    background:rgba(214, 106, 27, 0.4);
+}
+
