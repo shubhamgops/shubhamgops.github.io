@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>
+            Loan calculator
+        </title>
+        <style>
+            body,h2 {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+                -webkit-appearance: none; 
+                margin: 0; 
+            }
+            
+            .main {
+                width:100%;
+                background:#f0f0f0;
+                font-family:sans-serif;
+            }
+            
+            .header {
+                background:#db0a5b;
+                color:white;
+                padding-left: 30px;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                font-size: 90%;
+                
+            }
+            
+            .body{
+                padding-bottom: 25px;
+            }
+            
+            .section {
+                width:80%;
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            
+            .text {
+                float: left;
+            }
+            
+            .input {
+                float: right;
+                border-radius: 5px;
+                width: 150px;
+                height: 25px;
+                border: 1px solid #db0a5b;
+            }
+            
+            
+            .hero-box {
+                width:40%;
+                margin: auto;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            
+            .emicss {
+                font-size:35px;
+                color:#db0a5b;
+            }
+            
+            .button {
+                margin:auto;
+                display: block;
+                border-radius: 5px;
+                background: #db0a5b;
+                border: none;
+                color:white;
+                height: 30px;
+            }
+            
+            .button:active {
+                background: #f7005f;
+            }
+        </style>
+        <script src="jquery-3.1.1.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                    function calculateLoan() {
+                        var loan_amount = parseInt($("#loan_amount").val());
+                        var rate_of_interest =parseInt( $("#rate_of_interest").val());
+                        var tenure =parseInt( $("#tenure").val());
+            
+                        var rate_interest_month = rate_of_interest / 12;
+                        var interest = rate_interest_month/100 * loan_amount;
+                        var total_interest = interest * tenure;
+                        var total_loan = loan_amount + total_interest;
+                        var emi = parseInt(total_loan / tenure);
+                        
+                        $("#emi").html(emi);
+                    }
+                
+                    $("#calculate").click(calculateLoan);
+                
+            });
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <h2>Personal Loan EMI Calculator</h2>
+            </div>
+            <div class="body">
+                <div class="section">
+                <span class="text">Loan amount(&#x20b9;)</span>
+                <input type="number" class="input" id="loan_amount">
+                </div>
+                <div class="section">
+                <span class="text">Rate of interest(%)Per anum</span>
+                <input type="number" class="input" id="rate_of_interest">
+                </div>
+                <div class="section">
+                <span class="text">Tenure(In months)</span>
+                <input type="number" class="input" id="tenure">
+                </div>
+                <div class="hero-box">
+                    <span>Your EMI</span> <span class="emicss">&#x20b9;<span id="emi"></span></span>
+                </div>
+                <input type="button" id="calculate" value="Calculate EMI" class="button"/>
+        </div>
+    </body>
+</html>

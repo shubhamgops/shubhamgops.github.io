@@ -1,0 +1,162 @@
+/*--------------basic setup--------------------*/
+html,body {
+    color: #292f33;
+    font-size: 14px;
+    line-height: 18px;
+    background: #f5f8fa;
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+
+/*--------------reusable  componennt---------------*/
+.btn {
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 120%;
+    font-weight: bold;
+    line-height: normal;
+    padding: 8px 16px;
+    position: relative;
+    margin-right: 25px;
+}
+
+.primary-button {
+    color: #fff;
+    background-color: #1da1f2;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.05));
+    border: 1px solid #3b88c3;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.primary-button:hover {
+    background-color: #1da1f2;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.15));
+    border-color: #3b88c3;
+}
+
+.primary-button:active {
+    background-color: #198dd3;
+}
+
+
+.link{
+    text-decoration: none;
+    color:#1da1f2;
+    margin-left: 5px;
+}
+
+.link:hover {
+    text-decoration:underline;
+}
+
+.row {
+    display: block;
+    margin: 10px 0;
+}
+
+/*---------------navigation---------------*/
+.nav-bar {
+    background: #fff;
+    height: 46px;
+    width: 100%;
+    position:relative;
+    border-bottom:  1px solid rgba(0,0,0,0.15);
+}
+
+
+.navul {
+    list-style-type: none;
+    padding: 0px;
+    max-width: 865px;
+    margin:0 auto;
+}
+
+.navli {
+    float: left;
+    padding: 10px;
+    font-size: 120%;
+    position: relative;
+    display: inline-block;
+    margin-top: 8px;
+    height: 30%;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom .15s ease-in-out;
+}
+
+.navli:hover{
+    border-bottom: 4px solid #1da1f2;
+    color: #1da1f2;
+}
+
+.navli a{
+    text-decoration: none;
+    font-size: 80%;
+    color: #5f5f5f;
+    transition: color .15s ease-in-out;
+}
+
+.navli a:hover{
+    color:#1da1f2;
+}
+
+
+
+.navli img {
+    width:15px;
+    height: 14px;
+    padding: 0 4px; 
+}
+
+/*-------------login box----------------*/
+.login-box {
+    background: #fff;
+    max-width: 865px;
+    margin: 10px auto;  
+    border:  1px solid rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
+
+.loginform {
+    padding-left: 40px;
+    margin-top: 40px;
+}
+
+.loginform h1{
+    font-size:200%;
+}
+
+.input {
+    display:block;
+    padding: 8px;
+    width: 300px;
+    margin: 15px 0;
+    font-size: 120%;
+    font-weight: 300;
+    border-radius: 5px;
+    border: 1px solid #d6d6d6;
+}
+
+.input:focus {
+    border: 1px solid #1da1f2;
+    outline: none;
+}
+
+
+/*--------------footer-----------------*/
+.footer{
+    margin-top: 20px;
+    background: #f4f4f4;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 40px;
+    color:#959595;
+    font-size: 95%;
+}
